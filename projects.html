@@ -304,7 +304,7 @@ var cb=document.getElementById('cb'),cf=document.getElementById('cf');
 if(!cb||!cb.getContext)return;
 root.classList.add('js');
 var BX=cb.getContext('2d'),FX=cf.getContext('2d');
-var RM=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+var RM=false; /* motion is always on, by the owner's choice */
 var W=0,H=0,MOB=false,L={};
 var TAU=Math.PI*2,PI=Math.PI;
 
